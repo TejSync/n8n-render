@@ -1,0 +1,10 @@
+FROM n8nio/n8n
+
+EXPOSE 5678
+
+ENV N8N_PORT=5678
+ENV NODE_ENV=production
+ENV N8N_PROTOCOL=https
+ENV N8N_HOST=0.0.0.0
+
+CMD ["n8n"]
